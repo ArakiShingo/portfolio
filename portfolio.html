@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>荒木真悟のポートフォリオ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ページ全体を中央に配置 */
+        body {
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #828282;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 作品を中央に配置 */
+        }
+
+        .gallery-item {
+            margin: 10px;
+        }
+
+        /* 画像と動画のサイズを指定 */
+        img, video {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px; /* 縦のサイズを200pxに制限 */
+        }
+
+        footer {
+            background-color: #828282;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>荒木真悟のポートフォリオ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#gallery">ギャラリー</a></li>
+            <li><a href="#contact">連絡先</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section id="home">
+            <h2>ようこそ、私のポートフォリオへ</h2>
+            <p>私がこれまでに作成したプログラムや機器の一部を掲示してます。ぜひご覧ください。</p>
+        </section>
+
+        <section id="gallery">
+            <h2>ギャラリー</h2>
+            <div class="gallery">
+                <!-- 作品 1 -->
+                <div class="gallery-item">
+                    <h3>No1:ライントレースロボット</h3>
+                    <p>大学の実験で作成したライントレースロボットです。
+                    <br>Arduinoという企業のマイコンを使用し、C言語に類似する言語でロボットを制御するプログラムを作成しました。
+                    <br>仕組みとしては空調制御などに用いられているpid制御を組み込みました。
+                    <br>ロボットの画像と実際に動いている動画を以下に掲載します。</p>
+                    <img src="pic1.jpg" alt="Image 1">
+                    <img src="pic2.jpg" alt="Image 2">
+                    <video src="maincorse1.mp4" controls></video>
+                    <video src="maincorse2.mp4" controls></video>
+                    
+                </div>
+        
+                <!-- 作品 2 -->
+                <div class="gallery-item">
+                    <h3>No2:リバーシ</h3>
+                    <p>Javascript・HTMLを独学で学んだ際に勉強の一環としてリバーシのプログラムを作成しました。
+                    <br>作成したコードの一部を修正し、GithubPagesに掲載してあります。
+                    <br>以下の"リバーシページへをクリックすると、そのサイトへ移動できます。
+                    <br>また、現在修正版も作成中のため、そのURLも記載しておきます。
+                    <br>まだ未完成ではありますが、お時間ございましたらぜひご覧ください。
+                    </p>
+                    <img src="osero1.png" alt="Image 3">
+                    <br><a href="https://arakishingo.github.io/reversi/">リバーシのページへ</a>
+                    <br><a href="https://arakishingo.github.io/game-reversi/">作成中リバーシ</a>
+                </div>
+                <p>作品登録作業中</p>
+                <!-- 作品 3 -->
+                <!-- <div class="gallery-item">
+                    <h3>作品 3</h3>
+                    <p>これは作品 3の簡単な説明と使用方法です.</p>
+                    <img src="image3.jpg" alt="Image 3">
+                    <video src="video3.mp4" controls></video>
+                    <br><a href="作品3の詳細へのURL">詳細を見る</a>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>連絡先</h2>
+            <p>Gmail: s.araki.job001222@gmail.com</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2023 荒木真悟のポートフォリオ
+    </footer>
+</body>
+</html>
+
+
+<!-- <section id="contact">
+            <h2>連絡先</h2>
+            <p>Gmail:s.araki.job001222@gmail.com</p>
+            <h2>お問い合わせ</h2>
+            <p>お問い合わせ内容を入力してください。</p>
+            <form action="s.araki.job001222@gmail.com" method="post">
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="送信">
+            </form>
+        </section> -->
